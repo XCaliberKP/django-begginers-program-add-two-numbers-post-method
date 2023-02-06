@@ -5,4 +5,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("Hello All, Welcome to Django Class")
+    return render(request, 'home.html')
