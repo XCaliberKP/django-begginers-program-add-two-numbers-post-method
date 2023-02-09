@@ -4,7 +4,10 @@
 
 <h1>{{heading}}!!!!!!</h1>
 
-<form action='add'>
+<form action='add' method='post'>
+
+    {% csrf_token %}
+
     <label for="first">Enter First Number </label> <br>
     <input type="text" name="first" id="first">
     <br> <br>

@@ -10,7 +10,7 @@ def home(request):
 
 
 def add(request):
-    val1 = int(request.GET['first'])
-    val2 = int(request.GET['second'])
+    val1 = int(request.POST['first'])
+    val2 = int(request.POST['second'])
     res = val1 + val2
     return render(request, 'result.html', {'r': res})
